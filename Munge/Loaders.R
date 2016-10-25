@@ -126,7 +126,6 @@ ga <- filter(ga, end_date >= "2016-10-15")
 hi <- subset(pollster_chart_data("2016-hawaii-president-trump-vs-clinton"),
              select=c("Trump",
                       "Clinton",
-                      "Other",
                       "Undecided",
                       "pollster", 
                       "end_date", 
@@ -200,7 +199,6 @@ ks <- filter(ks, end_date >= "2016-10-15")
 ky <- subset(pollster_chart_data("2016-kentucky-president-trump-vs-clinton"),
              select=c("Trump",
                       "Clinton",
-                      "Other",
                       "Undecided",
                       "pollster", 
                       "end_date", 
@@ -285,7 +283,6 @@ mn <- filter(mn, end_date >= "2016-10-15")
 ms <- subset(pollster_chart_data("2016-mississippi-president-trump-vs-clinton"),
              select=c("Trump",
                       "Clinton",
-                      "Other",
                       "Undecided",
                       "pollster", 
                       "end_date", 
@@ -309,7 +306,6 @@ mo <- filter(mo, end_date >= "2016-10-15")
 mt <- subset(pollster_chart_data("2016-montana-president-trump-vs-clinton"),
              select=c("Trump",
                       "Clinton",
-                      "Other",
                       "Undecided",
                       "pollster", 
                       "end_date", 
@@ -409,7 +405,6 @@ nc <- filter(nc, end_date >= "2016-10-15")
 nd <- subset(pollster_chart_data("2016-north-dakota-president-trump-vs-clinton"),
              select=c("Trump",
                       "Clinton",
-                      "Other",
                       "Undecided",
                       "pollster", 
                       "end_date", 
@@ -564,7 +559,7 @@ va <- subset(pollster_chart_data("2016-virginia-president-trump-vs-clinton"),
                       "sample_subpopulation", 
                       "sample_size", 
                       "partisanship"))
-va <- filter(va, end_date="2016-10-15")
+va <- filter(va, end_date >= "2016-10-15")
 
 wa <- subset(pollster_chart_data("2016-washington-president-trump-vs-clinton"),
              select=c("Trump",
@@ -576,7 +571,7 @@ wa <- subset(pollster_chart_data("2016-washington-president-trump-vs-clinton"),
                       "sample_subpopulation", 
                       "sample_size", 
                       "partisanship"))
-wa <- filter(wa, end_date="2016-10-15")
+wa <- filter(wa, end_date >= "2016-10-15")
 
 wv <- subset(pollster_chart_data("2016-west-virginia-president-trump-vs-clinton"),
              select=c("Trump",
@@ -588,7 +583,7 @@ wv <- subset(pollster_chart_data("2016-west-virginia-president-trump-vs-clinton"
                       "sample_subpopulation", 
                       "sample_size", 
                       "partisanship"))
-wv <- filter(wv, end_date="2016-10-15")
+wv <- filter(wv, end_date >= "2016-10-15")
 
 wi <- subset(pollster_chart_data("2016-wisconsin-president-trump-vs-clinton"),
              select=c("Trump",
@@ -600,7 +595,7 @@ wi <- subset(pollster_chart_data("2016-wisconsin-president-trump-vs-clinton"),
                       "sample_subpopulation", 
                       "sample_size", 
                       "partisanship"))
-wi <- filter(wi, end_date="2016-10-15")
+wi <- filter(wi, end_date >= "2016-10-15")
 
 wy <- subset(pollster_chart_data("2016-wyoming-president-trump-vs-clinton"),
              select=c("Trump",
@@ -611,5 +606,5 @@ wy <- subset(pollster_chart_data("2016-wyoming-president-trump-vs-clinton"),
                       "sample_subpopulation", 
                       "sample_size", 
                       "partisanship"))
-wy <- filter(wy, end_date="2016-10-15")
+wy <- filter(wy, end_date >= "2016-10-15")
 
